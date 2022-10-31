@@ -1,0 +1,7 @@
+# Custom module library for general purposes.
+movie.admin:
+  js:
+    js/movie.admin.js: {}
+  css:
+    layout:
+      css/movie.admin.css: {}

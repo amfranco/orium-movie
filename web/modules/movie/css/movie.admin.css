@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Admin styling for the Movie module.
+ */
+
+/**
+  Diplay form fields side by side on tablet and desktop.
+ */
+@media (min-width: 320px) {
+  .movie-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .movie-form .form-wrapper {
+    flex: 1 1 100%;
+    padding: 5px;
+    max-width: 30%;
+  }
+}
+
+.release-date-error-message {
+  color: #dc2323;
+  font-size: 0.8rem;
+}

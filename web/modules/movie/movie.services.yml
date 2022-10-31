@@ -1,0 +1,6 @@
+services:
+  movie.normalizer.movie_entity:
+    class: 'Drupal\movie\Normalizer\MovieEntityNormalizer'
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: normalizer, priority: 8 }

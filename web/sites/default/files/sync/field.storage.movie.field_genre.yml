@@ -1,0 +1,20 @@
+uuid: d63b73e1-f8f9-4252-a83d-c6c5c4dcc494
+langcode: en
+status: true
+dependencies:
+  module:
+    - movie
+    - taxonomy
+id: movie.field_genre
+field_name: field_genre
+entity_type: movie
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,39 @@
+uuid: d80f0c4d-229e-4f7d-b8af-801ef393ed4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.movie.movie.field_genre
+  module:
+    - datetime
+    - movie
+id: movie.movie.default
+targetEntityType: movie
+bundle: movie
+mode: default
+content:
+  field_genre:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  release_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
